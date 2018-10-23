@@ -41,12 +41,18 @@ sparkComponents ++= Seq("mllib")
 // add any Spark Package dependencies using spDependencies.
 // e.g. spDependencies += "databricks/spark-avro:0.1"
 
+// This should point to a file with Github credentials for publishing to Spark Packages.
+credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
+
 // We only use sbt-release to update version numbers for now.
 releaseProcess := Seq[ReleaseStep](
   inquireVersions,
+  runClean,
+  runTest,
   setReleaseVersion,
   commitReleaseVersion,
   tagRelease,
+  // releaseStepTask(spPublish),
   setNextVersion,
   commitNextVersion
 )

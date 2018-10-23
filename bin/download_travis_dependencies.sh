@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "Downloading Spark if necessary"
 echo "Spark version = $SPARK_VERSION"
 echo "Spark build = $SPARK_BUILD"

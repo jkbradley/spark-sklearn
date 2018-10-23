@@ -7,10 +7,10 @@ from setuptools import setup
 PACKAGES = ["spark_sklearn"]
 KEYWORDS = ["spark", "scikit-learn", "distributed computing", "machine learning"]
 CLASSIFIERS = [
-	"Programming Language :: Python :: 2.6",
 	"Programming Language :: Python :: 2.7",
 	"Programming Language :: Python :: 3",
-	"Programming Language :: Python :: 3.2",
+	"Programming Language :: Python :: 3.5",
+	"Programming Language :: Python :: 3.6",
 	"Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Natural Language :: English",
@@ -35,7 +35,7 @@ def read(*parts):
 
 setup(
 	name="spark-sklearn",
-	description="Integration tools for running scikit-learn on Spark",
+	description="Integration tools for running scikit-learn on Apache Spark",
 	license="Apache 2.0",
 	url="https://github.com/databricks/spark-sklearn",
 	version="0.2.3",
