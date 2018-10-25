@@ -34,3 +34,6 @@ python/doc_gen/
 
 # editor backups
 *~
+
+# pypi package submission
+spark_sklearn.egg-info
